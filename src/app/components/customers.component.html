@@ -1,0 +1,23 @@
+<table border="1"
+       cellspacing = "10px"
+       cellpadding = "10px"
+       align = "center"
+       style="font-size:30px;text-align: center"
+>
+<thead style="background-color:gray">
+<tr>
+    <th>Name</th>
+    <th>City</th>
+    <th>Country</th>
+</tr>
+</thead>
+<tbody>
+
+    <tr *ngFor="let x of result.records">
+        <td>{{x.Name}}</td>
+        <td>{{x.City}}</td>
+        <td>{{x.Country}}</td>
+    </tr>
+</tbody>
+</table>
+<h2>{{result}}</h2>
